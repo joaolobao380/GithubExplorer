@@ -9,7 +9,7 @@ const Routes: React.FC = () => (
   // O exact serve para que o route identifique a rota exata
   <Switch>
     <Route path="/" exact component={Dashboard} />
-    <Route path="/repository" component={Repository} />
+    <Route path="/repository/:repository+" component={Repository} />
   </Switch>
 );
 
